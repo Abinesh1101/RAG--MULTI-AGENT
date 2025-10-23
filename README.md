@@ -125,6 +125,86 @@ streamlit run app.py
 | **Reasoning** | Mistral 7B LLM generates final answer |
 | **Controller** | Manages workflow between agents |
 
+## 📊 Example Queries & Expected Flow
+
+### **Query 1: Factual Lookup**
+```
+Question: "How many vehicles did Tesla deliver in 2023?"
+
+Flow:
+1. Intent Agent → Classifies as 'fact'
+2. Retrieval Agent → Finds 5 relevant text chunks
+3. Reasoning Agent → Generates answer from context
+
+Answer: "Tesla delivered over 1.8 million electric vehicles globally in 2023."
+```
+
+### **Query 2: Visual Analysis**
+```
+Question: "What does the emissions chart show?"
+
+Flow:
+1. Intent Agent → Classifies as 'visual'
+2. Retrieval Agent → Finds related images
+3. Vision Agent → Describes images with BLIP-2
+4. Retrieval Agent → Gets supporting text context
+5. Reasoning Agent → Synthesizes multimodal answer
+
+Answer: "The emissions data shows Tesla reduced CO2 emissions by 15%..."
+```
+
+### **Query 3: Multi-Document Analysis**
+```
+Question: "Compare Tesla and Google environmental initiatives"
+
+Flow:
+1. Intent Agent → Classifies as 'analysis'
+2. Retrieval Agent → Retrieves from both PDFs
+3. Reasoning Agent → Performs comparative analysis
+
+Answer: "Tesla focuses primarily on electric vehicles... while Google emphasizes..."
+```
+
+### **Query 4: Summarization**
+```
+Question: "Summarize the key sustainability achievements"
+
+Flow:
+1. Intent Agent → Classifies as 'summary'
+2. Retrieval Agent → Gets comprehensive document sections
+3. Reasoning Agent → Generates concise summary
+
+Answer: "Key achievements include: 1) 1.8M EVs delivered, 2) 15% emissions reduction..."
+```
+
+---
+
+## 🧪 Testing
+
+### **Test Individual Agents**
+```bash
+# Test Intent Agent
+python agents/intent_agent.py
+
+# Test Retrieval Agent
+python agents/retrieval_agent.py
+
+# Test Vision Agent
+python agents/vision_agent.py
+
+# Test Reasoning Agent
+python agents/reasoning_agent.py
+
+# Test Controller
+python agents/controller_agent.py
+```
+
+### **Run Full System Demo**
+```bash
+python main.py --mode demo
+```
+
+---
 ---
 
 ## 📊 Performance
