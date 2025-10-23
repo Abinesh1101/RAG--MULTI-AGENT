@@ -203,9 +203,10 @@ python agents/controller_agent.py
 ```bash
 python main.py --mode demo
 ```
-### **Streamlit Process (App.py)**
+### **Streamlit Workflow file**
 ```bash
-Attached the Video Demo mp.4 of the RAG- Multi Agent
+Streamlit run app.py
+```
 ---
 ---
 
