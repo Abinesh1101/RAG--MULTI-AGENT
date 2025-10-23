@@ -187,9 +187,9 @@ python extracted_images.py
 
 ## 📧 Contact
 
-**Author:** Abinesh 23MDT1005  
-**Email:** your.email@example.com  
-**GitHub:** [github.com/yourusername](https://github.com/yourusername)  
+**Author:** Abinesh Sankaranarayanan  
+**Email:** abiunni0209@gmail.com 
+**GitHub:** https://github.com/Abinesh1101  
 
 ⭐ If you like this project, consider giving it a star!
 
