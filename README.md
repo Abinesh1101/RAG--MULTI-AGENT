@@ -140,27 +140,6 @@ streamlit run app.py
 
 ---
 
-## 🛠️ Troubleshooting
-
-### ❌ Ollama Connection Failed
-Run Ollama server manually:
-```bash
-ollama serve
-```
-
-### ❌ Missing Model Files
-Retrain the intent model:
-```bash
-python models/train_intent_model1.py
-```
-
-### ❌ No Images Extracted
-Re-run extraction:
-```bash
-python extracted_images.py
-```
-
----
 
 ## 🌐 Technologies Used
 
