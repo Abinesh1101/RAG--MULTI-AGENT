@@ -203,12 +203,12 @@ python agents/controller_agent.py
 ```bash
 python main.py --mode demo
 ```
-
----
----
 ### **Streamlit Process (App.py)**
 ```bash
 Attached the Video Demo mp.4 of the RAG- Multi Agent
+---
+---
+
 ## 📊 Performance
 
 | Metric | Value | Notes |
